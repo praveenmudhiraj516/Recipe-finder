@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2900a17f88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container" id="mainContainer">
+        <div class="text-center ">
+            <h1 class="font-bold text-[30px]">🔍 Recipe Finder</h1>
+            <p>Discover delicious recipes by ingredient or dish name </p>
+        </div>
+        <div>
+            <input id="searchinput" placeholder="🔍 Search by ingredient or recipe name(eg.chicken, pasta) " class="p-2 border rounded-lg w-[80vw] ml-10 mt-5 " type="text" value="" />
+            <button id="searchBtn">search</button>
+        </div>
+
+        <div class="text-center mt-10 " id="interface">
+            <div>
+                <h1 class="text-8xl">
+                    👨‍🍳
+                </h1>
+            </div>
+            <div>
+                <h1 class="text-2xl font-bold">Ready to cook something amazing?</h1>
+                <p>Search for recipes by entering an ingredient you have or the name of a dish you'd like to make</p>
+            </div>
+            <div class="gap-16">
+                <button id="chickenBTn" class="bg-[orange] rounded-xl p-2 text-[#c45033] ">chicken</button>
+                <button id="pastaBTn" class="bg-[orange] rounded-xl p-2 text-[#c45033] ">Pasta</button>
+                <button id="chocolateBTn" class="bg-[orange] rounded-xl p-2 text-[#c45033] ">Chocolate</button>
+                <button id="beefBTn" class="bg-[orange] rounded-xl p-2 text-[#c45033] ">Beef</button>
+                <button id="saladBTn" class="bg-[orange] rounded-xl p-2 text-[#c45033] ">Salad</button>
+                <button id="soupBTn" class="bg-[orange] rounded-xl p-2 text-[#c45033] ">Soup</button>
+            </div>
+        </div>
+        <div id="result-container" class=" flex flex-wrap  m-auto">
+
+        </div>
+    </div>
+    <div id="eachSpecificContainer"></div>
+<script src="script.js"></script>
+</body>
+
+</html>
+
